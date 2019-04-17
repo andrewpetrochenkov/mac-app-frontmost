@@ -8,8 +8,9 @@ usage() {
 
 [[ $1 == "-h" ]] || [[ $1 == "--help" ]] && usage "$@"
 
-[[ $1 != 1 ]] && usage
+[[ $# != 1 ]] && usage
 
+unset key
 [[ $1 == "--bundleid" ]] && key="bundleID"
 [[ $1 == "--path" ]] && key="bundlepath"
 [[ $1 == "--name" ]] && key="name"
