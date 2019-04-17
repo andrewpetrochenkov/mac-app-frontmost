@@ -1,0 +1,24 @@
+#!/usr/bin/env bash
+{ set +x; } 2>/dev/null
+
+usage() {
+    echo "usage: $(basename $0) --bundleid|--name|--path|--pid" 1>&2
+    [[ $1 == "-h" ]] || [[ $1 == "--help" ]]; exit
+}
+
+[[ $1 == "-h" ]] || [[ $1 == "--help" ]] && usage "$@"
+
+[[ $1 != 1 ]] && usage
+
+[[ $1 == "--bundleid" ]] && key="bundleID"
+[[ $1 == "--path" ]] && key="bundlepath"
+[[ $1 == "--name" ]] && key="name"
+[[ $1 == "--pid" ]] && key="pid"
+
+[[ -z "$key" ]] && usage
+
+front="$(lsappinfo front)" || exit
+info="$(lsappinfo info -only $key $front)" || exit
+value="$(echo "$info" | awk -F'"=' '{print $2}')"
+[[ "$value" != '"'* ]] && echo "$value" && exit
+echo "$value" | awk -F'"' '{print $2}'
