@@ -1,24 +1,21 @@
 <!--
-https://pypi.org/project/readme-generator/
-https://pypi.org/project/python-readme-generator/
+https://readme42.com
 -->
 
-[![](https://img.shields.io/badge/OS-macOS-blue.svg?longCache=True)]()
-[![](https://img.shields.io/pypi/v/mac-app-frontmost.svg?maxAge=3600)](https://pypi.org/project/mac-app-frontmost/)
-[![](https://img.shields.io/npm/v/mac-app-frontmost.svg?maxAge=3600)](https://www.npmjs.com/package/mac-app-frontmost)
-[![Travis](https://api.travis-ci.org/looking-for-a-job/mac-app-frontmost.svg?branch=master)](https://travis-ci.org/looking-for-a-job/mac-app-frontmost/)
 
-#### Installation
-```bash
-$ [sudo] npm i -g mac-app-frontmost
-```
+
+[![](https://img.shields.io/badge/OS-Unix-blue.svg?longCache=True)]()
+[![](https://img.shields.io/pypi/v/mac-app-frontmost.svg?maxAge=3600)](https://pypi.org/project/mac-app-frontmost/)
+[![](https://img.shields.io/npm/v/mac-app-frontmost.svg?maxAge=3600)](https://www.npmjs.com/package/mac-app-frontmost)[![](https://img.shields.io/badge/License-Unlicense-blue.svg?longCache=True)](https://unlicense.org/)
+[![](https://github.com/andrewp-as-is/mac-app-frontmost/workflows/tests42/badge.svg)](https://github.com/andrewp-as-is/mac-app-frontmost/actions)
+
+### Installation
 ```bash
 $ [sudo] pip install mac-app-frontmost
 ```
 
-#### Scripts usage
 ```bash
-usage: app-frontmost --bundleid|--name|--path|--pid
+$ [sudo] npm i -g mac-app-frontmost
 ```
 
 #### Examples
@@ -37,5 +34,5 @@ $ app-frontmost --pid
 ```
 
 <p align="center">
-    <a href="https://pypi.org/project/python-readme-generator/">python-readme-generator</a>
+    <a href="https://readme42.com/">readme42.com</a>
 </p>
